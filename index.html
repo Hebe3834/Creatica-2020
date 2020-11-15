@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Açaí</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div class="toggleButton">
+        <button onclick="changeMode()" id="toggles">Dark Mode</button>
+      </div>
+      <br><br>
+      <img src="https://2mvpmi3xuiwg20v1pj6qne51-wpengine.netdna-ssl.com/wp-content/uploads/2019/09/berry.png" class="acai">
+      <h1 class="title">Açaí</h1>
+    <!-- timer here -->
+      <h4 id="acaiTimer">Timer</h4>
+      <div id="acaiContainer">
+        <span id="timer_count">00:30</span><br><br>
+        <input type="button" id="timer_start" value="Start" onClick="timer('start')" />
+        <input type="button" id="timer_stop" value="Stop" onClick="timer('stop')" />
+        <input type="button" id="timer_reset" value="Reset" onClick="timer('reset')" />
+        <br><br>
+        <input type="text" id="timer_time" value="25:00" />
+        <br><br>
+      </div>
+    <!-- to do list here -->
+    <h3 id="welcome"></h3>
+    <table id = "toDo"></table>
+    <input type = "text" id = "newTask" placeholder = "New Task...">
+    <button type = "button" onclick = "createTask()" id = "create">+</button>
+    <p style="font-size: 17px"><i>(Click to mark a task as done and double click to delete it!)</i></p>
+    <button type = "button" onclick = "clearAll()" id = "all">Clear all</button>
+    <br><button type = "button" onclick = "restoreTask()" id = "restore">Restore last deleted task</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js%22%3E"</script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="timer.js"></script>
+  </body>
+</html>
